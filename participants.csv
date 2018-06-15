@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 First Name,Last Name,Gitlab Handle,Week 2 Repo Link,
 Samuel Olumide,Oluwole,Lummy,https://gitlab.com/Lummy/Week-Two-Project.git,
 Onyeka,Ijeh,OnyekaIjeh,https://gitlab.com/OnyekaIjeh/booust-week-two,
@@ -75,3 +76,7 @@ Adegbola, Adeniyi, @niyexdroid, https://gitlab.com/niyexdroid/booust-project.git
 Oluwadamilola,Ige,ace_IG, https://gitlab.com/ace_IG/My-homestudy.git,
 ekpoto, matthew, https://gitlab.com/ematthew/week2.git,,
 Naimat, Oyewale, Naimahtech, https://gitlab.com/Naimahtech/BooustAssignment1,
+=======
+First Name,Last Name,Gitlab Handle,Week 2 Repo Link
+okoduwa,paul,@paulokoduwa,git@gitlab.com:paulokoduwa/boost_project.git
+>>>>>>> paulokoduwa/HomeStudy-master
