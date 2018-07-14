@@ -3,110 +3,51 @@
 <head>
  <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
       <title>The Movies </title>
-<style type="text/css">
-body{
-      width: 100%;
-      height:100%;
-      background-image: url("./images/body.jpg");
-      background-size: cover;
-      background-attachment: fixed;
-      margin: 0;
-      padding: 0; 
-      text-align: center;
-      color: red;
-}
-a{
-      text-decoration:  none;
-      color: #f5deb3;
-}
-a:hover,a:active{
-      color: red;
-}
-
-
-.header{
-      width: 100%;
-      height: 100%;
-      color: white;
-      background: #513f86;
-      float: left;
-      backface-visibility: hidden;
-
-}
-.header h1{
-      float: left;
-      font-size: 1.4rem;
-      margin: 0 0 0 2rem;
-      text-transform: uppercase;
-      
-}
-.header .logo{
-      width: 15%;
-      padding: 0 5px 5px 0;
-      float: left;
-
-}
-.logo img{
-      width: 60%;
-      padding: 10px 20px 10px 20px;
-
-}
-.header .menu{
-      float: right;
-      width: 45%;
-      height: 100%;
-      padding: 0 5px 0 5px;
-      margin-top: 5px;
-}
-.header .menu nav{
-    width: 100%;
-    font-size: 1.4rem;
-    height: 100%;
-}
-.header .menu nav ul{
-      margin: 0;
-
-}
-.header nav ul li{
-      display: inline-block;
-      padding: 43px 30px;
-      border-left: 2px solid black;
-}
-      
-.footer{
-      position: fixed;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      background-color: #513f86;
-      color: white;
-      text-align: center;
-}
-section{
-      
-      padding: 10rem 6rem;
-
-}
-      
-</style>    
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.css">  
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min">  
+      <link rel="stylesheet" type="text/css" href="css/bootstrap-grid">
+      <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min">
+      <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot">
+      <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min">
 </head>
  <body >
- 	<div class="header">
-            <div class="logo">
-             <a href="#"><img src="images/head.png" alt="logo"></a>
-            </div>
-            <div class="menu">
-             <nav>
-                  <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="movie.html">Movie</a></li>
-                        <li><a href="#">Bookings</a></li>
-                        <li><a href="#">Contact</a></li>
-                  </ul>
-             </nav>
-           </div>
-      </div>
- <section class="container">
+  <nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="/">
+    <a href="#"><img src="images/head.png" alt="logo"></a>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav nr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="movie.html">Movies</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="gallery.html">Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="about.html">About</a>
+      </li>
+       
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<div class="container"></div>
+  <div class="jumbotron">
+    <h1 class="display-4">AkinCinema</h1>
+    <p class="lead">Watch all of this week's new film trailers, including new looks at Creed II, Searching, Welcome to Marwen, and more. Plus, get a quick update on the latest movie news and release date announcements</p>
+    <a class="btn btn-primary btn-lg" href="#" role="button">View more</a>
+  </div>
+ <section >
        <h1>12 FILMS TO SEE IN JULY</h1>
        <p>Take a look at the most-anticipated films headed to theaters in July, including new Mission:  </p>
        <p>Impossible and Ant-Man installments and some of the most interesting films from this  </p>
@@ -127,8 +68,12 @@ section{
 
 
 
- </section>     
+ </section>   
+ </div>  
  </body>
  <footer class="footer"> &copy 2018 Cinema productions
       <p>Contact Us: akincinema@gmail.com, 08149498247</p></footer>
+
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/bootstrap.js"></script>
 </html>
