@@ -2,6 +2,8 @@
 <html>
 <head>
  <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+<<<<<<< HEAD
+  <meta name="viewport" content="width=device-width,initial-scale=1">
       <title>The Movies </title>
       <link rel="stylesheet" type="text/css" href="css/style.css">
       <link rel="stylesheet" type="text/css" href="css/bootstrap.css">  
@@ -10,6 +12,7 @@
       <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min">
       <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot">
       <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min">
+       <link rel="stylesheet" type="text/css" href="https://cdjns.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
  <body >
   <nav class="navbar navbar-expand-lg navbar-light">
@@ -33,17 +36,21 @@
       <li class="nav-item">
         <a class="nav-link active" href="about.html">About</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="contact.html">contact</a>
+      </li>
        
     </ul>
     <form class="form-inline my-2 my-lg-0">
     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
+     <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i>
   </div>
 </nav>
   <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
     <li class="breadcrumb-item active" aria-current="page">Movies</li>
   </ol>
 </nav>
@@ -52,9 +59,134 @@
        <p>The most anticipated movie of this summer will be showing at our cinemas starting august 10.  </p>
        <p>Impossible and Ant-Man installments and some of the most interesting films from this collection can be booked earlier on before the release date  </p>
     
- </body>
+ 
  <footer class="footer"> &copy 2018 Cinema productions
       <p>Contact Us akincinema@gmail.com, 08149498247</p></footer>
       <script src="js/jquery-3.3.1.slim.min.js"></script>
       <script src="js/bootstrap.js"></script>
+
+
+<script>
+  function myFunction(){
+    var x = document.getElementById("navbarSupportedContent");
+      if (x.className === "navbarSupportedContent") {
+        x.className += "responsive" ;
+
+      }else{
+        x.className = "navbarSupportedContent"
+      }
+   }
+</script>
+</body>
+=======
+      <title>The Movies </title>
+<style type="text/css">
+      body{
+      width: 100%;
+      height:100%;
+      background-image: url("./images/body.jpg");
+      background-size: cover;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 0; 
+      text-align: center;
+      color: red;
+}
+a{
+      text-decoration:  none;
+      color: #f5deb3;
+}
+a:hover,a:active{
+      color: red;
+}
+
+
+.header{
+      width: 100%;
+      height: 100%;
+      color: white;
+      background: #513f86;
+      float: left;
+      backface-visibility: hidden;
+
+}
+.header h1{
+      float: left;
+      font-size: 1.4rem;
+      margin: 0 0 0 2rem;
+      text-transform: uppercase;
+      
+}
+.header .logo{
+      width: 15%;
+      padding: 0 5px 5px 0;
+      float: left;
+
+}
+.logo img{
+      width: 60%;
+      padding: 10px 20px 10px 20px;
+
+}
+.header .menu{
+      float: right;
+      width: 45%;
+      height: 100%;
+      padding: 0 5px 0 5px;
+      margin-top: 5px;
+}
+.header .menu nav{
+    width: 100%;
+    font-size: 1.4rem;
+    height: 100%;
+}
+.header .menu nav ul{
+      margin: 0;
+
+}
+.header nav ul li{
+      display: inline-block;
+      padding: 43px 30px;
+      border-left: 2px solid black;
+}
+      
+.footer{
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #513f86;
+      color: white;
+      text-align: center;
+}
+section{
+      
+      padding: 10rem 6rem;
+}
+</style>    
+</head>
+ <body>
+ 	<div class="header">
+            <div class="logo">
+             <a href="index.html"><img src="images/head.png" alt="logo"></a>
+            </div>
+            <div class="menu">
+             <nav>
+                  <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Movie</a></li>
+                        <li><a href="#">Bookings</a></li>
+                        <li><a href="#">Contact</a></li>
+                  </ul>
+             </nav>
+           </div>
+      </div>
+      <section class="container">
+       <h1>About the Movies</h1>
+       <p>The most anticipated movie of this summer will be showing at our cinemas starting august 10.  </p>
+       <p>Impossible and Ant-Man installments and some of the most interesting films from this collection can be booked earlier on before the release date  </p>
+    
+ </body>
+ <footer class="footer">&copy 2018 Cinema productions </footer>
+>>>>>>> 11b3d55cd0719819da56550eafb993bb476f20ba
 </html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+ <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+      <title>The Movies </title>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.css">  
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min">  
+      <link rel="stylesheet" type="text/css" href="css/bootstrap-grid">
+      <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min">
+      <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot">
+      <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min">
+      <link rel="stylesheet" type="text/css" href="https://cdjns.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+ <body >
+  <nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="/">
+    <a href="#"><img src="images/head.png" alt="logo"></a>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav nr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="movie.html">Movies</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="gallery.html">Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="about.html">About</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link active" href="contact.html">contact</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i>
+  </div>
+</nav>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Contact</li>
+  </ol>
+</nav>
+  <div class="jumbotron">
+    <section class="form-section" >
+       <h1>Contact Form<script>formVaules|json </script> </h1>
+       <h3 id="show FormValues" show></h3>
+       <form>
+         <div class="form-group">
+          <label for="exampleInputEmail">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail" ariadescribedby="emailHelp" placeholder="enter mail">
+          <small id="email_error" class="form-text" flag error></small>
+        </div>
+
+          <div class="form-group">
+          <label for="exampleInputFullname">Full name</label>
+          <input type="email" class="form-control" id="exampleInputFullname" ariadescribedby="emailfullname" placeholder="enter Fullname">
+          <small id="fullname_error" class="form-text" flag error></small>
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputMessage">Message </label>
+          <textarea class="form-control" id="exampleInputMessage" rows="3"> </textarea>
+          <small id="message_error" class="form-text" flag error></small>
+        </div>
+        <span id="submitForm" class="btn btn-primary">Send</span>
+
+       
+   <hr>
+
+   <span id="hideBtn" class="btn btn-sn btn-default">Hide</span> | <span id="showBtn" class="btn btn-sn btn-secondary">Show</span>
+      
+      </form>
+ <button id="button">show Animation</button>
+<div  id="animate" style="background:#27155a;  height:150px; width:80%; margin-left: 35px; position:absolute; left: 100px; font-size: 4em">Thank you!!!</div>
+ </section>   
+ </div>  
+
+    
+  </div>
+ 
+ 
+ <footer class="footer"> &copy 2018 Cinema productions
+      <p>Contact Us: akincinema@gmail.com, 08149498247</p></footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+
+<script>
+  
+
+  $(document).ready(function(){
+    $("#hideBtn").click(function(){
+        $("#submitForm").hide();
+    });
+    $("#showBtn").click(function(){
+        $("#submitForm").show();
+    });
+});
+
+   $("#submitForm" ).click(function(){
+      var emailAddress = $('#exampleInputEmail').val();
+      var fullName = $('#exampleInputFullname').val();
+      var message = $('#exampleInputMessage').val();
+
+      if(emailAddress ===""){
+          $('#email_error').text('please enter your email address');
+      } else{
+        $('#email_error').text('');
+      }
+
+      if(fullName ===""){
+          $('#fullname_error').text('please enter your fullname');
+      } else{
+        $('#fullname_error').text('');
+      }
+
+      if(message ===""){
+          $('#message_error').text('message is required');
+      }   else{
+        $('#message_error').text('');
+      }
+
+      if (emailAddress !=="" && fullName !=="" && message !=="") {
+        var formVaules = {
+            emailAddress: emailAddress,
+            fullName: fullName,
+            message: message
+        };
+        console.log(formVaules);
+
+      }
+      return false;
+
+   });
+   $(document).ready(function(){
+    $("button").click(function(){
+        var div = $("#animate");  
+        div.animate({left: '100px'}, "slow");
+        div.animate({fontSize: '5em'}, "slow");
+    });
+});
+
+   function myFunction(){
+    var x = document.getElementById("navbarSupportedContent");
+      if (x.className === "navbarSupportedContent") {
+        x.className += "responsive" ;
+
+      }else{
+        x.className = "navbarSupportedContent"
+      }
+   }
+</script>
+
+</body>
+</html>

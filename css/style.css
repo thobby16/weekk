@@ -38,6 +38,8 @@ a:hover,a:active{
       margin-right: 10%;
       margin-top: 0;
       margin-bottom: 0;
+      padding: 0rem 2rem !important;
+
 } 
 .footer{
       position: fixed;
@@ -50,7 +52,7 @@ a:hover,a:active{
 }
 section{
       text-align: center;
-      padding: 10rem 6rem;
+      padding: 3rem 6rem;
 
 }
 .carousel {
@@ -65,4 +67,20 @@ h2 {
 }
 .form-in {
       margin-left: 67% !important;
+}
+.form-section{
+      width: 80% !important;
+      margin-left: 10% !important;
+      margin-bottom: 50% !important;
+}
+.form-group{
+      text-align: left;
+}
+.button{
+      padding: 20rem 6rem !important;
+      margin-left: 30% !important;
+}
+.breadcrumb{
+      margin-left: 10%;
+      width: 80%;
 }

@@ -2,6 +2,7 @@
 <html>
 <head>
  <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+ <meta name="viewport" content="width=device-width,initial-scale=1">
       <title>The Movies </title>
       <link rel="stylesheet" type="text/css" href="css/style.css">
       <link rel="stylesheet" type="text/css" href="css/bootstrap.css">  
@@ -10,6 +11,7 @@
       <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min">
       <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot">
       <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min">
+       <link rel="stylesheet" type="text/css" href="https://cdjns.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
  <body >
   <nav class="navbar navbar-expand-lg navbar-light">
@@ -33,17 +35,21 @@
       <li class="nav-item">
         <a class="nav-link active" href="about.html">About</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="contact.html">contact</a>
+      </li>
        
     </ul>
     <form class="form-inline my-2 my-lg-0">
     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
+     <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i>
   </div>
 </nav>
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
     <li class="breadcrumb-item active" aria-current="page">About</li>
   </ol>
 </nav>
@@ -52,9 +58,26 @@
        <p>The cinemas opens mondays to fridays 8am - 10pm and on the weekend 10am to 11pm. </p>
        <p>You can contact us your you booking or tickets or send us a mail @akincinema@gmail.com .</p>
        <p>AkinCinema, you are always welcome!!!</p>
- </body>
+ 
+
+
  <footer class="footer"> &copy 2018 Cinema productions
       <p>Contact Us akincinema@gmail.com, 08149498247</p></footer>
       <script src="js/jquery-3.3.1.slim.min.js"></script>
       <script src="js/bootstrap.js"></script>
+
+
+<script>
+  function myFunction(){
+    var x = document.getElementById("navbarSupportedContent");
+      if (x.className === "navbarSupportedContent") {
+        x.className += "responsive" ;
+
+      }else{
+        x.className = "navbarSupportedContent"
+      }
+   }
+</script>
+</body>
+
 </html>
